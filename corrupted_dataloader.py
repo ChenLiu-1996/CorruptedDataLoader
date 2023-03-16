@@ -9,14 +9,14 @@ class CorruptLabelDataLoader(torch.utils.data.DataLoader):
     and use the resulting returned instance as if you are using
     a normal DataLoader instance.
 
-    ```
-    ...
-
-    loader = CorruptLabelDataLoader(loader)
-
-    for (x, y) in loader:
+    Example:
+    ----------------
         ...
-    ```
+        loader = CorruptLabelDataLoader(loader)
+
+        for (x, y) in loader:
+            ...
+    ----------------
 
     Purpose of this wrapper:
         Randomly permute the labels such that there is an
