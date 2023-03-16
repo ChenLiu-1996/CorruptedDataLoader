@@ -5,7 +5,7 @@ import torch
 class CorruptedLabelDataLoader(torch.utils.data.DataLoader):
     '''
     This is a wrapper around a Pytorch DataLoader.
-    To use, simply wrap it around an instantiated DataLoader instance,
+    Simply wrap it around an instantiated DataLoader instance,
     and use the resulting returned instance as if you are using
     a normal DataLoader instance.
 
