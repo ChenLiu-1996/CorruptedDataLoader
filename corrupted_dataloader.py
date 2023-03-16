@@ -2,7 +2,7 @@ import numpy as np
 import torch
 
 
-class CorruptLabelDataLoader(torch.utils.data.DataLoader):
+class CorruptedLabelDataLoader(torch.utils.data.DataLoader):
     '''
     This is a wrapper around a Pytorch DataLoader.
     To use, simply wrap it around an instantiated DataLoader instance,
@@ -12,7 +12,7 @@ class CorruptLabelDataLoader(torch.utils.data.DataLoader):
     Example:
     ----------------
         train_loader = ...  # define `train_loader` as you normally would
-        train_loader = CorruptLabelDataLoader(train_loader)
+        train_loader = CorruptedLabelDataLoader(train_loader)
 
         for (x, y) in train_loader:
             ...
