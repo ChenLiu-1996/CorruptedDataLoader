@@ -23,16 +23,19 @@ class CorruptLabelDataLoader(torch.utils.data.DataLoader):
         intentional mismatch between the images and labels.
     '''
 
-    def __init__(self, dataloader, random_seed: int = 1):
+    def __init__(self,
+                 dataloader: torch.utils.data.DataLoader,
+                 random_seed: int = 1) -> None:
+
         self.dataloader = dataloader
+
+        np.random.seed(random_seed)
         if 'targets' in self.dataloader.dataset.__dir__():
-            # `targets` used in MNIST, CIFAR10, CIFAR100
-            np.random.seed(random_seed)
+            # The key `targets` is used in MNIST, CIFAR10, CIFAR100.
             self.dataloader.dataset.targets = np.random.permutation(
                 self.dataloader.dataset.targets)
         elif 'labels' in self.dataloader.dataset.__dir__():
-            # `labels` used in STL10
-            np.random.seed(random_seed)
+            # The key `labels` is used in STL10.
             self.dataloader.dataset.labels = np.random.permutation(
                 self.dataloader.dataset.labels)
 
