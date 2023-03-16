@@ -20,7 +20,7 @@ This repository currently only contains a single file, which itself contains a s
 Meanwhile, it can be easily adapted to any custom `dataset`, as long as you know under what key the `labels` are stored.
 
 ## Usage
-To use, simply copy `CorruptedDataLoader` to an appropriate location in your codebase and modify as you need. Don't forget to give us a `star` if you use it and find it helpful.
+To use, simply copy `CorruptedDataLoader` to an appropriate location in your codebase and modify as you need. Don't forget to give us a **`star`** if you use it and find it helpful.
 
 ## Citation
 To be added
