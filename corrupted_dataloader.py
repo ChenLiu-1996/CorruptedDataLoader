@@ -11,10 +11,10 @@ class CorruptLabelDataLoader(torch.utils.data.DataLoader):
 
     Example:
     ----------------
-        ...
-        loader = CorruptLabelDataLoader(loader)
+        train_loader = ...  # define `train_loader` as you normally would
+        train_loader = CorruptLabelDataLoader(train_loader)
 
-        for (x, y) in loader:
+        for (x, y) in train_loader:
             ...
     ----------------
 
