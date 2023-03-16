@@ -1,7 +1,7 @@
 # CorruptedDataLoader
 Chen Liu (chen.liu.cl2482@yale.edu)
 
-*Please kindly **Star** [![Github Stars](https://img.shields.io/github/stars/ChenLiu-1996/CorruptedDataLoader.svg?style=social&label=Stars)](https://github.com/ChenLiu-1996/CorruptedDataLoader/) this repo for better reach if you find it useful.*
+Please kindly **Star** [![Github Stars](https://img.shields.io/github/stars/ChenLiu-1996/CorruptedDataLoader.svg?style=social&label=Stars)](https://github.com/ChenLiu-1996/CorruptedDataLoader/) this repo for better reach if you find it useful.
 
 ## Contributions
 We provide a simple wrapper around PyTorch DataLoader to **intentionally mess up the input/label correspondence**.
