@@ -7,7 +7,7 @@ Please kindly **Star** [![Github Stars](https://img.shields.io/github/stars/Chen
 We provide a simple wrapper around PyTorch DataLoader to **intentionally mess up the input/label correspondence**.
 
 ## Motivation
-In the majority of times, when we train a machine learning model, we pay extra attention to make sure the inputs and labels are correctly matched. In occasional situations, however, we may want the opposite to happen. One such possibility is, as outlined in the paper ["Understanding deep learning requires rethinking generalization"](https://arxiv.org/abs/1611.03530), we may want to **corrupt the training set and overfit a model on random labels**.
+In the majority of times, when we train a machine learning model, we pay extra attention to make sure the inputs and labels are correctly matched. In occasional situations, however, we may want the opposite to happen. One such possibility is, as outlined in the paper ["Understanding deep learning requires rethinking generalization"](https://arxiv.org/abs/1611.03530), we may want to **corrupt the training set and intentionally overfit a model on random labels**.
 
 Despite careful search on the internet, we were unable to find existing open-source implementations to achieve this purpose. Therefore we designed our own method to achieve this purpose and provided it to those who may have a similar need.
 
