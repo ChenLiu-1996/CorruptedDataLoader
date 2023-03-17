@@ -11,6 +11,14 @@ In the majority of times, when we train a machine learning model, we pay extra a
 
 Despite careful search on the internet, we were unable to find existing open-source implementations to achieve this purpose. Therefore we designed our own method to achieve this purpose and provided it to those who may have a similar need.
 
+## Example
+```
+train_loader = ...  # define `train_loader` as you normally would
+train_loader = CorruptedLabelDataLoader(train_loader)
+for (x, y) in train_loader:
+    ...
+```
+
 ## Details
 This repository currently only contains a single file, which itself contains a single class called `CorruptedDataLoader`. `CorruptedDataLoader` is a wrapper around a Pytorch `DataLoader`. The `Dataloader` may hold arbitrary `dataset`s, while in the current implementation, we only support the following `dataset`s:
 
